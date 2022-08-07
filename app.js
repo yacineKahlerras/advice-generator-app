@@ -40,7 +40,9 @@ const waitForServer = async () => {
 
 // gets json data from url
 const fetchData = async () => {
-  let response = await fetch(url).catch((err) => console.error(err));
+  let response = await fetch(url, { cache: "no-cache" }).catch((err) =>
+    console.error(err)
+  );
   if (response) return response.json();
   return response;
 };
