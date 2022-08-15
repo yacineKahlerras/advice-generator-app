@@ -26,7 +26,7 @@ const getAdvice = async () => {
   loading.classList.remove("show");
 
   isServerWaiting = true;
-  setTimeout(waitForServer, 2000);
+  setTimeout(waitForServer, 0);
 };
 
 // waits for server to load
